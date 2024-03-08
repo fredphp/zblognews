@@ -8,7 +8,7 @@
     if($title=='未命名'){
         $title = TztCardVip_TransferHTML($article->Content);
     }else{
-        // $title = $ttitle;
+        $title = $ttitle;
     }
  ?>
 <title><?php if ($article->Metas->arttitle) { ?><?php  echo $article->Metas->arttitle;  ?><?php }else{  ?><?php  echo $title;  ?><?php } ?><?php if ($zbp->Config('TztCardVip')->SeoSetCat) { ?><?php  echo $seoline;  ?><?php  echo $article->Category->Name;  ?><?php } ?><?php  echo $seoline;  ?><?php  echo $seotitle;  ?><?php if ($zbp->Config('TztCardVip')->SeoSetSiteSub) { ?><?php  echo $seoline;  ?><?php  echo $seousbtit;  ?><?php } ?></title>
