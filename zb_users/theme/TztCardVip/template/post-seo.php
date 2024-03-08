@@ -8,6 +8,7 @@
     if($title=='未命名'){
         $title = TztCardVip_TransferHTML($article->Content);
     }else{
+        
     }
 {/php}
 <title>{if $article.Metas.arttitle}{$article.Metas.arttitle}{else}{$title}{/if}{if $zbp->Config('TztCardVip')->SeoSetCat}{$seoline}{$article.Category.Name}{/if}{$seoline}{$seotitle}{if $zbp->Config('TztCardVip')->SeoSetSiteSub}{$seoline}{$seousbtit}{/if}</title>

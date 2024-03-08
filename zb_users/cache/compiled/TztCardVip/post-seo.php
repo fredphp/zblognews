@@ -8,7 +8,6 @@
     if($title=='未命名'){
         $title = TztCardVip_TransferHTML($article->Content);
     }else{
-        // var_dump($title);die();
         // $title = $ttitle;
     }
  ?>
